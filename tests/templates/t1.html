@@ -1,0 +1,14 @@
+{% block content %}
+<html>
+  <body>
+    <p>Hi {{ context["prospect"]["first_name"] }},<br><br>
+       We’re performing a
+       <a href="https://www.google.com/">short survey</a>
+        of trends in HR in US companies and would appreciate your participation, in exchange for a 25$ amazon gift card.<br>
+        <br>
+        Thanks,<br>
+        {{context["campaign"]["manager_first_name"]}}<br>
+    </p>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% block content %}
+Hi,
+
+I noticed you read the case study I sent - would be happy to elaborate more on a quick call - do you have any open slot on {{context["general"]["next_business_day"]}}?
+{% endblock %}

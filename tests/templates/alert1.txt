@@ -1,0 +1,2 @@
+Important:
+{{ context['prospect']['first_name'] }} id {{ context['prospect']['prospect_id'] }} from {{ context['prospect']['company']}} opened an e-mail {{ context['prospect']['actions']['open'] }} times

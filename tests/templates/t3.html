@@ -1,0 +1,29 @@
+{% block content %}
+<html>
+  <body>
+    <p>Hi {{ context["prospect"]["first_name"] }},<br><br>
+        I noticed that in {{context["prospect"]["company_name"]}} you have {{context["prospect"]["data"]["number_of_open_positions"]}} open positions, and I’m sure that hiring is one of your top priorities.<br>
+        Please take a look at:<br>
+        {%if context["prospect"]["industry"]=="tech" %}
+           <a href="https://www.google.com/">Tech company study case</a><br>
+        {%elif context["prospect"]["industry"]=="finance" %}
+           <a href="https://www.google.com/">Finance company study case</a><br>
+        {%else %}
+           <a href="https://www.google.com/">General customer study case</a><br>
+        {% endif %}
+        to see how we made hiring much more efficient with our product to companies similar to you such as<br>
+        {%if context["prospect"]["industry"]=="tech" %}
+           Tech customer list/logos<br>
+        {%elif context["prospect"]["industry"]=="finance" %}
+           Finance customer list/logos<br>
+        {%else %}
+           General customer list/logos<br>
+        {% endif %}
+        Will be happy to set up a short 15 min call to discuss.<br>
+        <br>
+        Thanks,<br>
+        {{context["campaign"]["manager_first_name"]}}<br>
+    </p>
+  </body>
+</html>
+{% endblock %}

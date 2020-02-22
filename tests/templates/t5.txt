@@ -1,0 +1,7 @@
+{% block content %}
+Hi {{ context["prospect"]["first_name"] }},
+
+Nice to e-meet.
+I saw you are hiring {{context["prospect"]["data"]["number_of_open_positions"]}} and I think we can help you do it better.
+Would be happy to set up a short call.
+{% endblock %}
