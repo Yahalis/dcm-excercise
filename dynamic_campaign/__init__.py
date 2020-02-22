@@ -1,5 +1,5 @@
-from .src.logger import logger
-from .src.context_builder import ContextBuilder
-from .src.template_manager import TemplatManager
-from .src.actions_manager import ActionsManager, DCMPlugin
-from .src.events_handler import EventsHandler
+from .logger import logger
+from .context_builder import ContextBuilder
+from .template_manager import TemplatManager
+from .actions_manager import ActionsManager, DCMPlugin
+from .events_handler import EventsHandler
