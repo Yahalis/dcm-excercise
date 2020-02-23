@@ -34,6 +34,7 @@ class EventsHandler:
             try:
                 isRule = eval(rule['condition'])
             except Exception as e:
+                logger.exception('Error while evaluating rule %s', rule)
                 isRule=False
 
             if isRule:
